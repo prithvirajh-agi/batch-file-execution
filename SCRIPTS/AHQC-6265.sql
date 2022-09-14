@@ -36,7 +36,7 @@ END;
 
 
 update  dlist_distribute_contacts 
-set CONTACT_EMAIL_ID =DECODE((sys_context('USERENV','DB_NAME')),'JNJPRDDB','safety@yuhan.co.kr;8228280398@fax.graphnet.com;8228280725@fax.graphnet.com','JnJ_Build@arisglobal.com'),
+set CONTACT_EMAIL_ID =DECODE((sys_context('USERENV','DB_NAME')),'JNJPRDDB','JnJ_Build@arisglobal.com;JnJ_Build@arisglobal.com;JnJ_Build@arisglobal.com','JnJ_Build@arisglobal.com'),
 user_id = 'DR_DIST_CONT',
 date_modified = sysdate
  where contact_name in ('JJPRD_YUH');
